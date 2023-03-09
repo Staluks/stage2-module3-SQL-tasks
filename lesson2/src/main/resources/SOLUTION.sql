@@ -55,70 +55,34 @@ VALUES('MONTHLY');
 
 
 INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(SELECT id FROM paymenttype
-WHERE name = 'WEEKLY', 100, 2023-01-01,
-SELECT id FROM student
-WHERE name = 'John'
-);
+VALUES(2, 100, 2023-01-01, 1);
 INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(SELECT id FROM paymenttype
-WHERE name = 'MONTHLY', 100, 2023-01-01,
-SELECT id FROM student
-WHERE name = 'Oliver'
-);
+VALUES(3, 100, 2023-01-01,4);
 INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(SELECT id FROM paymenttype
-WHERE name = 'WEEKLY', 100, 2023-01-01,
-SELECT id FROM student
-WHERE name = 'Henry'
-);
+VALUES(2, 100, 2023-01-01,7);
 INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(SELECT id FROM paymenttype
-WHERE name = 'MONTHLY', 100, 2023-01-01,
-SELECT id FROM student
-WHERE name = 'DAILY'
-);
+VALUES(3, 100, 2023-01-01, 5);
 INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(SELECT id FROM paymenttype
-WHERE name = 'DAILY', 100, 2023-01-01,
-SELECT id FROM student
-WHERE name = 'Agris'
-);
+VALUES(1, 100, 2023-01-01, 10);
 INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(SELECT id FROM paymenttype
-WHERE name = 'WEEKLY', 100, 2023-01-01,
-SELECT id FROM student
-WHERE name = 'Artis'
-);
+VALUES(2, 100, 2023-01-01, 13);
 
 INSERT INTO mark(student_id, subject_id, mark)
-VALUES(SELECT id FROM student
-WHERE name = 'Chris', SELECT id FROM subject
-WHERE name = 'Art', 8
+VALUES(2, 1, 8
 );
 INSERT INTO mark(student_id, subject_id, mark)
-VALUES(SELECT id FROM student
-WHERE name = 'Oliver', SELECT id FROM subject
-WHERE name = 'History', 5
+VALUES(4, 4, 5
 );
 INSERT INTO mark(student_id, subject_id, mark)
-VALUES(SELECT id FROM student
-WHERE name = 'James', SELECT id FROM subject
-WHERE name = 'Geography', 9
+VALUES(5, 3, 9
 );
 INSERT INTO mark(student_id, subject_id, mark)
-VALUES(SELECT id FROM student
-WHERE name = 'Jacob', SELECT id FROM subject
-WHERE name = 'Math', 4
+VALUES(8, 6, 4
 );
 INSERT INTO mark(student_id, subject_id, mark)
-VALUES(SELECT id FROM student
-WHERE name = 'Logan', SELECT id FROM subject
-WHERE name = 'PE', 9
+VALUES(9, 5, 9
 );
 INSERT INTO mark(student_id, subject_id, mark)
-VALUES(SELECT id FROM student
-WHERE name = 'Agris', SELECT id FROM subject
-WHERE name = 'IT', 10
+VALUES(10, 8, 10
 );
 
