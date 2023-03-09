@@ -1,49 +1,49 @@
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('John', 1990-07-31, 1);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Chris', 1990-07-01, 1);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Carl', 1990-07-02, 1);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Oliver', 1991-07-01, 2);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('James', 1991-07-02, 2);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Lucas', 1991-07-03, 2);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Henry', 1991-07-04, 2);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Jacob', 1992-07-01, 3);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Logan', 1992-07-02, 3);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Agris', 1993-07-01, 4);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Ritvars', 1993-07-02, 4);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Janis', 1994-07-01, 5);
-INSERT INTO Students(name, birthday, groupnumber)
+INSERT INTO students(name, birthday, groupnumber)
 VALUES('Artis', 1994-07-02, 5);
 
-INSERT INTO Subject(name, description, grade)
+INSERT INTO subject(name, description, grade)
 VALUES('Art', 'painting', 1);
-INSERT INTO Subject(name, description, grade)
+INSERT INTO subject(name, description, grade)
 VALUES('Music', 'singing', 1);
-INSERT INTO Subject(name, description, grade)
+INSERT INTO subject(name, description, grade)
 VALUES('Geography', 'singing', 2);
-INSERT INTO Subject(name, description, grade)
+INSERT INTO subject(name, description, grade)
 VALUES('History', 'history', 2);
-INSERT INTO Subject(name, description, grade)
+INSERT INTO subject(name, description, grade)
 VALUES('PE', 'sport', 3);
-INSERT INTO Subject(name, description, grade)
+INSERT INTO subject(name, description, grade)
 VALUES('Math', 'calculating', 3);
-INSERT INTO Subject(name, description, grade)
+INSERT INTO subject(name, description, grade)
 VALUES('Science', 'knowledge', 4);
-INSERT INTO Subject(name, description, grade)
+INSERT INTO subject(name, description, grade)
 VALUES('IT', 'computers', 4);
-INSERT INTO Subject(name, description, grade)
+INSERT INTO subject(name, description, grade)
 VALUES('Coding', 'JAVA', 5);
-INSERT INTO Subject(name, description, grade)
+INSERT INTO subject(name, description, grade)
 VALUES('English', 'language', 5);
 
 INSERT INTO paymenttype(name)
