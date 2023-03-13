@@ -1,29 +1,16 @@
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('John', 1990-07-31, 1);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Chris', 1990-07-01, 1);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Carl', 1990-07-02, 1);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Oliver', 1991-07-01, 2);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('James', 1991-07-02, 2);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Lucas', 1991-07-03, 2);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Henry', 1991-07-04, 2);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Jacob', 1992-07-01, 3);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Logan', 1992-07-02, 3);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Agris', 1993-07-01, 4);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Ritvars', 1993-07-02, 4);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Janis', 1994-07-01, 5);
-INSERT INTO student(name, birthday, groupnumber)
-VALUES('Artis', 1994-07-02, 5);
+insert into student (name, birthday, groupnumber) values('John', '1990-07-31', 1);
+insert into student (name, birthday, groupnumber) values('Chris', '1990-07-01', 1);
+insert into student (name, birthday, groupnumber) values('Carl', '1990-07-02', 1);
+insert into student (name, birthday, groupnumber) values('Oliver', '1991-07-01', 2);
+insert into student (name, birthday, groupnumber) values('James', '1991-07-02', 2);
+insert into student (name, birthday, groupnumber) values('Lucas', '1991-07-03', 2);
+insert into student (name, birthday, groupnumber) values('Henry', '1991-07-04', 2);
+insert into student (name, birthday, groupnumber) values('Jacob', '1992-07-01', 3);
+insert into student (name, birthday, groupnumber) values('Logan', '1992-07-02', 3);
+insert into student (name, birthday, groupnumber) values('Agris', '1993-07-01', 4);
+insert into student (name, birthday, groupnumber) values('Ritvars', '1993-07-02', 4);
+insert into student (name, birthday, groupnumber) values('Janis', '1994-07-01', 5);
+insert into student (name, birthday, groupnumber) values('Artis', '1994-07-02', 5);
 
 INSERT INTO subject(name, description, grade)
 VALUES('Art', 'painting', 1);
@@ -46,43 +33,22 @@ VALUES('Coding', 'JAVA', 5);
 INSERT INTO subject(name, description, grade)
 VALUES('English', 'language', 5);
 
-INSERT INTO paymenttype(name)
-VALUES('DAILY');
-INSERT INTO paymenttype(name)
-VALUES('WEEKLY');
-INSERT INTO paymenttype(name)
-VALUES('MONTHLY');
+insert into paymenttype (id, name) values(1, 'DAILY');
+insert into paymenttype (id, name) values(2, 'WEEKLY');
+insert into paymenttype (id, name) values(3, 'MONTHLY');
 
 
-INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(2, 100, 2023-01-01, 1);
-INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(3, 100, 2023-01-01,4);
-INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(2, 100, 2023-01-01,7);
-INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(3, 100, 2023-01-01, 5);
-INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(1, 100, 2023-01-01, 10);
-INSERT INTO payment(type_id, amount, payment_date, student_id)
-VALUES(2, 100, 2023-01-01, 13);
+insert into payment (type_id, amount, payment_date, student_id) values (2, 100, '2023-01-01', 1);
+insert into payment (type_id, amount, payment_date, student_id) values (3, 100, '2023-01-01',4);
+insert into payment (type_id, amount, payment_date, student_id) values (2, 100, '2023-01-01',7);
+insert into payment (type_id, amount, payment_date, student_id) values (3, 100, '2023-01-01', 5);
+insert into payment (type_id, amount, payment_date, student_id) values (1, 100, '2023-01-01', 10);
+insert into payment (type_id, amount, payment_date, student_id) values (2, 100, '2023-01-01', 13);
 
-INSERT INTO mark(student_id, subject_id, mark)
-VALUES(2, 1, 8
-);
-INSERT INTO mark(student_id, subject_id, mark)
-VALUES(4, 4, 5
-);
-INSERT INTO mark(student_id, subject_id, mark)
-VALUES(5, 3, 9
-);
-INSERT INTO mark(student_id, subject_id, mark)
-VALUES(8, 6, 4
-);
-INSERT INTO mark(student_id, subject_id, mark)
-VALUES(9, 5, 9
-);
-INSERT INTO mark(student_id, subject_id, mark)
-VALUES(10, 8, 10
-);
+insert into mark (student_id, subject_id, mark) values(2, 1, 8);
+insert into mark (student_id, subject_id, mark) values(4, 4, 5);
+insert into mark (student_id, subject_id, mark) values(5, 3, 9);
+insert into mark (student_id, subject_id, mark) values(8, 6, 4);
+insert into mark (student_id, subject_id, mark) values(9, 5, 9);
+insert into mark (student_id, subject_id, mark) values(10, 8, 10);
 
