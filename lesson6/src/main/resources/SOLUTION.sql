@@ -1,7 +1,7 @@
-SELECT id, type_id, amount, payment_date, payment_date, student_id FROM payment INNER JOIN paymenttype ON payment.type_id = paymenttype.id WHERE paymenttype.id ='MONTHLY';
+SELECT I.id, I.type_id, I.amount, I.payment_date, I.payment_date, I.student_id FROM payment AS I INNER JOIN paymenttype AS J ON I.type_id = J.id WHERE J.id ='MONTHLY';
 
-SELECT id, student_id, subject_id, mark FROM mark INNER JOIN subject ON mark.subject_id = subject.id WHERE subject.id ='ART';
+SELECT G.id, G.student_id, G.subject_id, G.mark FROM mark AS G INNER JOIN subject AS H ON G.subject_id = H.id WHERE H.id ='ART';
 
-SELECT B.id, B.name, B.birthday, B.groupnumber FROM payment AS A INNER JOIN student AS B ON A.student_id = B.id INNER JOIN paymenttype AS C ON A.type_id = C.id WHERE C.name = 'WEEKLY';
+SELECT A.id, A.name, A.birthday, A.groupnumber FROM student AS A INNER JOIN payment AS B ON A.id = B.student_id INNER JOIN paymenttype AS C ON B.type_id = C.id WHERE C.name = 'WEEKLY';
 
 SELECT D.id, D.name, D.birthday, D.groupnumber FROM student AS D INNER JOIN mark AS E ON D.id = E.student_id INNER JOIN subject AS F ON E.subject_id = F.id WHERE F.name = 'Math';

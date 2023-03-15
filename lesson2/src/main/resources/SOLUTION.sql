@@ -41,7 +41,7 @@ insert into paymenttype (id, name) values(3, 'MONTHLY');
 insert into payment (type_id, amount, payment_date, student_id) values (2, 100, '2023-01-01', 1);
 insert into payment (type_id, amount, payment_date, student_id) values (3, 100, '2023-01-01',4);
 insert into payment (type_id, amount, payment_date, student_id) values (2, 100, '2023-01-01',7);
-insert into payment (type_id, amount, payment_date, student_id) values (3, 100, '2023-01-01', 5);
+insert into payment (type_id, amount, payment_date, student_id) values (1, 100, '2023-01-01', 5);
 insert into payment (type_id, amount, payment_date, student_id) values (1, 100, '2023-01-01', 10);
 insert into payment (type_id, amount, payment_date, student_id) values (2, 100, '2023-01-01', 13);
 
