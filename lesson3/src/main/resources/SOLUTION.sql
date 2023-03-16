@@ -8,6 +8,6 @@ ALTER TABLE subject ADD CONSTRAINT grade_check CHECK(grade BETWEEN 1 AND 10);
 
 ALTER TABLE paymenttype ADD UNIQUE(name);
 
-ALTER TABLE payment ALTER COLUMN type_id BIGINT SET NOT NULL;
-ALTER TABLE payment ALTER COLUMN amount decimal SET NOT NULL;
-ALTER TABLE payment ALTER COLUMN payment_date DateTime SET NOT NULL;
+ALTER TABLE payment ALTER COLUMN type_id BIGINT NOT NULL;
+ALTER TABLE payment ALTER COLUMN amount decimal NOT NULL;
+ALTER TABLE payment ALTER COLUMN payment_date DateTime NOT NULL;
